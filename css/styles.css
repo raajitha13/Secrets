@@ -1,0 +1,89 @@
+
+body {
+  background-color: #E8ECEF;
+}
+
+.centered {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.head-line{
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif; /* Choose a suitable font */
+  animation: colorChange 20s infinite; /* Adjust the duration as needed */
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+@keyframes colorChange {
+  0% {
+    background: linear-gradient(45deg, #3498db, #e74c3c, #2ecc71, #f39c12);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  25% {
+    background: linear-gradient(45deg, #e74c3c, #2ecc71, #f39c12, #3498db);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  50% {
+    background: linear-gradient(45deg, #2ecc71, #f39c12, #3498db, #e74c3c);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  75% {
+    background: linear-gradient(45deg, #f39c12, #3498db, #e74c3c, #2ecc71);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  100% {
+    background: linear-gradient(45deg, #3498db, #e74c3c, #2ecc71, #f39c12);
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
+
+.secrets-boxes{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.secret-text {
+  font-family: cursive;
+  width: 300px; 
+  margin: 10px;
+  padding: 15px;
+  
+  border: 2px solid #b980de; 
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.username-topleft{
+  text-align: right;
+}
+
+.errorprint{
+  color: red;
+}
+
+.bottom-buttons {
+  position: fixed;
+  bottom: 20px; /* Adjust the distance from the bottom as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  
+   /* Adjust the total width of the buttons container */
+}
+
+.btn{
+  margin: 8px;
+}
+
+
